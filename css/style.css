@@ -1,0 +1,308 @@
+/* General Styling */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1d252c;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+    text-decoration: underline;
+}
+
+.navbar-spacing {
+    height: 50px;
+}
+
+/* Header Styling */
+.header-banner {
+    background: linear-gradient(0deg, rgba(29,37,44,1) 0%, rgba(29,37,44,1) 20%, rgba(0,212,255,0) 40%, rgba(0,212,255,0) 100%), url('../images/crosstrek1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+}
+
+.header-banner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-banner .btn-custom {
+    background-color: #1d252c;
+    color: white;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .header-banner {
+        background: url('../images/crosstrek1.jpg') no-repeat center center;
+        background-size: cover;
+        text-shadow: 2px 2px #333;
+        height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    .header-banner h1 {
+        font-size: 35px;
+    }
+
+    .header-banner .btn-custom {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-banner {
+        height: 40vh;
+        padding-bottom: 15px;
+    }
+
+    .header-banner h1 {
+        font-size: 25px;
+    }
+
+    .header-banner .btn-custom {
+        padding: 6px 12px;
+    }
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+    min-height: 400px;
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-text {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.feature-text h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.feature-text p {
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        padding: 0;
+    }
+
+    .feature-card {
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        flex: 1 1 100%;
+    }
+    .feature-card:hover {
+        box-shadow: none;
+    }
+    
+    .feature-text h3 {
+        font-size: 16px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+    }
+}
+
+/* Info Section */
+.info-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.info-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-section .col-sm-4,
+.info-section .col-sm-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-section .col-sm-4 {
+    padding: 15px;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.info-section .btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    align-self: center;
+}
+
+.info-section .btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.info-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        padding: 40px 15px;
+    }
+
+    .info-section h2 {
+        font-size: 24px;
+    }
+
+    .info-section p {
+        font-size: 14px;
+    }
+
+    .info-section .btn-custom {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .info-section .col-sm-4 {
+        width: 100%;
+        margin-bottom: 20px;
+        order: 2;
+    }
+
+    .info-section .col-sm-8 {
+        width: 100%;
+        order: 1;
+    }
+}
+
+/* STARLINK Multimedia Section */
+.starlink-section{
+    padding:10px 0px
+}
+.starlink-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.starlink-section .col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.starlink-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Carousel */
+.carousel-inner .item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1d252c;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
