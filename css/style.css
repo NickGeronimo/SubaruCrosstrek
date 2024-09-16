@@ -1,366 +1,357 @@
 html {
-    scroll-behavior:smooth!important
-    }
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container,
+.content,
+.wrapper {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #1d252c;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.navbar-nav > li > a {
+  color: #fff !important;
+  font-size: 16px;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+  text-decoration: underline;
+}
+
+.header-banner {
+  background: url(../images/crosstrek1.jpg) no-repeat center center;
+  background-size: cover;
+  height: 75vh;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  margin-top: 50px;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    background: url(../images/crosstrek1.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow: 2px 2px #333;
+    height: 50vh;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header-banner {
+    height: 40vh;
+    padding-bottom: 15px;
+  }
+
+}
+
+.header-text {
+  background: #1d252c;
+  padding: 22px;
+  color: #fff;
+}
+.header-text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .header-text p {
+    font-size: 24px;
+  }
+}
+
+.info-section {
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.info-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-section .col-sm-4,
+.info-section .col-sm-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-section .col-sm-4 {
+  padding: 15px;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.info-section p {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 40px;
+  color: #333;
+}
+
+.info-section .btn {
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.info-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    padding: 40px 15px;
+  }
+
+  .info-section h2 {
+    font-size: 32px;
+  }
+
+  .info-section p {
+    font-size: 16px;
+  }
+
+  .info-section .col-sm-4 {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 2;
+  }
+
+  .info-section .col-sm-8 {
+    width: 100%;
+    order: 1;
+  }
+}
+
+
+
+.features-section {
+  padding: 40px 0;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #0000001a;
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+  min-height: 420px;
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 8px #0003;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-text {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.feature-text h3 {
+  font-size: 20px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.feature-text p {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    padding: 0;
+  }
+
+  .feature-card {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    flex: 1 1 100%;
+  }
+
+  .feature-card:hover {
+    box-shadow: none;
+  }
+
+  .feature-text h3 {
+    font-size: 24px;
+  }
+
+  .feature-text p {
+    font-size: 16px;
+  }
+}
+
+.starlink-section {
+  padding: 20px 0;
+}
+.starlink-section h3{
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.starlink-section p {
+    font-size: 16px; 
+}
+
+.starlink-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.starlink-section .col-sm-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.starlink-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+    .starlink-section h3{
+        font-size: 24x;
+        font-weight: bold;
     
-    body {
-    background-color:#f5f5f5;
-    font-family:Arial,sans-serif;
-    color:#333;
-    padding:0;
-    margin:0;
-    scroll-behavior:smooth!important;
-    overflow-x:hidden!important
     }
-    
-    .container,.content,.wrapper {
-    overflow-x:hidden;
-    scroll-behavior:smooth
-    }
-    
-    .navbar {
-    background-color:#1d252c;
-    border:none;
-    border-radius:0
-    }
-    
-    .navbar-brand {
-    color:#fff!important;
-    font-weight:700
-    }
-    
-    .navbar-nav > li > a {
-    color:#fff!important;
-    font-size:16px;
-    padding:15px 20px;
-    transition:background-color .3s ease,color .3s ease
-    }
-    
-    .navbar-nav > li > a:hover {
-    text-decoration:underline
-    }
-    
-    .header-banner {
-    background:url(../images/crosstrek1.jpg) no-repeat center center;
-    background-size:cover;
-    height:75vh;
-    color:#fff;
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-    text-align:center;
-    width:100vw;
-    position:relative;
-    margin-top:50px;
-    left:50%;
-    transform:translateX(-50%)
-    }
-    
-    .header-banner h1 {
-    font-size:3.82353rem;
-    font-weight:700
-    }
-    
-    .header-banner p {
-    font-weight:700;
-    margin-bottom:10px
-    }
-    
-    .header-banner .btn-custom {
-    background-color:#1d252c;
-    color:#fff;
-    font-weight:bolder
-    }
-    
-    @media (max-width: 768px) {
-    .header-banner {
-    background:url(../images/crosstrek1.jpg) no-repeat center center;
-    background-size:cover;
-    text-shadow:2px 2px #333;
-    height:50vh
-    }
-    
-    .header-banner h1 {
-    font-size:35px
-    }
-    }
-    
-    @media (max-width: 480px) {
-    .header-banner {
-    height:40vh;
-    padding-bottom:15px
-    }
-    
-    .header-banner h1 {
-    font-size:25px
-    }
-    
-    .header-banner .btn-custom {
-    padding:6px 12px
-    }
-    }
-    
-    .header-text h1 {
-    font-size:5rem;
-    font-weight:700
-    }
-    
-    .header-text p {
-    font-size:35px
-    }
-    
-    .info-section {
-    padding:60px 0;
-    background-color:#fff
-    }
-    
-    .info-section .row {
-    display:flex;
-    flex-wrap:wrap
-    }
-    
-    .info-section .col-sm-4,.info-section .col-sm-8 {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center
-    }
-    
-    .info-section .col-sm-4 {
-    padding:15px
-    }
-    
-    .info-section h2 {
-    font-size:36px;
-    margin-bottom:20px;
-    font-weight:700
-    }
-    
-    .info-section p {
-    font-size:20px;
-    line-height:1;
-    margin-bottom:30px;
-    color:#333
-    }
-    
-    .info-section .btn-custom {
-    background-color:#007bff;
-    color:#fff;
-    border:none;
-    padding:10px 20px;
-    font-size:16px;
-    border-radius:5px;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    transition:background-color .3s ease;
-    display:inline-block;
-    width:auto;
-    align-self:center
-    }
-    
-    .info-section .btn-custom:hover {
-    background-color:#0056b3
-    }
-    
-    .info-section img {
-    max-width:100%;
-    height:auto;
-    border-radius:5px
-    }
-    
-    @media (max-width: 768px) {
-    .info-section {
-    padding:40px 15px
-    }
-    
-    .info-section h2 {
-    font-size:24px
-    }
-    
-    .info-section p {
-    font-size:14px
-    }
-    
-    .info-section .btn-custom {
-    font-size:14px;
-    padding:8px 16px
-    }
-    
-    .info-section .col-sm-4 {
-    width:100%;
-    margin-bottom:20px;
-    order:2
-    }
-    
-    .info-section .col-sm-8 {
-    width:100%;
-    order:1
-    }
-    }
-    
-    .features-section {
-    padding:40px 0;
-    background-color:#f8f9fa
-    }
-    
-    .feature-card {
-    display:flex;
-    flex-direction:column;
-    background-color:#fff;
-    border:1px solid #ddd;
-    border-radius:5px;
-    overflow:hidden;
-    box-shadow:0 2px 4px #0000001a;
-    transition:box-shadow .3s ease;
-    height:100%;
-    min-height:400px;
-    flex:1 1 30%;
-    margin-bottom:20px
-    }
-    
-    .feature-card:hover {
-    box-shadow:0 4px 8px #0003
-    }
-    
-    .feature-card img {
-    width:100%;
-    height:200px;
-    object-fit:cover
-    }
-    
-    .feature-text {
-    padding:15px;
-    flex-grow:1
-    }
-    
-    .feature-text h3 {
-    font-size:18px;
-    margin-top:0
-    }
-    
-    .feature-text p {
-    font-size:14px;
-    color:#333
-    }
-    
-    @media (max-width: 768px) {
-    .features-section {
-    padding:0
-    }
-    
-    .feature-card {
-    border-radius:0;
-    border:none;
-    box-shadow:none;
-    flex:1 1 100%
-    }
-    
-    .feature-card:hover {
-    box-shadow:none
-    }
-    
-    .feature-text h3 {
-    font-size:16px
-    }
-    
-    .feature-text p {
-    font-size:12px
-    }
-    }
-    
-    .starlink-section {
-    padding:10px 0
-    }
-    
-    .starlink-section .row {
-    display:flex;
-    flex-wrap:wrap;
-    align-items:stretch
-    }
-    
-    .starlink-section .col-sm-6 {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:100%
-    }
-    
-    .starlink-section img {
-    max-width:100%;
-    height:auto
-    }
-    
-    .carousel-inner .item img {
-    width:100%;
-    height:80vh;
-    object-fit:cover
-    }
-    
-    .carousel-caption {
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    text-align:center;
-    color:#fff;
-    background:#000000b3;
-    padding:20px;
-    border-radius:8px;
-    box-sizing:border-box
-    }
-    
-    .carousel-caption h3 {
-    font-size:28px;
-    font-weight:700;
-    margin-bottom:10px;
-    line-height:1.2
-    }
-    
-    .carousel-caption p {
-    font-size:18px;
-    line-height:1.6
-    }
-    
-    @media (max-width: 767px) {
-    .carousel-inner .item img {
-    width:100%;
-    height:50vh
-    }
-    
-    .carousel-caption {
-    display:none
-    }
-    }
-    
-    .cta-section {
-    padding:40px 0;
-    background-color:#f8f9fa
-    }
-    
-    .cta-section h2 {
-    font-size:36px;
-    margin:20px 0;
-    font-weight:700
-    }
-    
-    .cta-section p {
-    font-size:18px;
-    margin-bottom:30px;
-    color:#333
-    }
-    
-    .cta-section .btn {
-    padding:15px 30px;
-    font-size:18px;
-    text-transform:uppercase
-    }
-    
-    footer {
-    background-color:#1d252c;
-    color:#fff;
-    padding-top:20px;
-    text-align:center
-    }
-    
-    footer a {
-    color:#fff;
-    text-decoration:none
-    }
+}
+
+.carousel-inner .item img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  background: #000000b3;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.carousel-caption h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .item img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.cta-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.cta-section .btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #1d252c;
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
